@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://artifact.aspose.com/repo/" }
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'com.aspose:aspose-cells:18.10'
+//    compile 'com.aspose:aspose-slides:18.9:jdk16'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
