@@ -12,7 +12,7 @@ public class DetectFileFormat
         String dataDir = "/Users/yaoxuewei/Documents/a4_test_files/";
 
         // The path to the document which is to be processed.
-        String filePath = dataDir + "test-h-less.docx";
+        String filePath = dataDir + "test-h-less.docx.bb";
 
         FileFormatInfo info = FileFormatUtil.detectFileFormat(filePath);
         System.out.println("The document format is: " + FileFormatUtil.loadFormatToExtension(info.getLoadFormat()));
